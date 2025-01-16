@@ -1,0 +1,368 @@
+/*-------------------------------------------------------------------
+--------------------    Groups Matrix Report     --------------------
+-------------------------------------------------------------------*/
+
+#ldmrefresher_matrix_filter, #ldmrefresher_refresher_filter {
+    margin: 15px 0;
+}
+
+#ldmrefresher_matrix_filter select, #ldmrefresher_refresher_filter select {
+    min-width: 100px;
+}
+
+#ldmrefresher_submit,
+#ldmrefresher_submit_load_all,
+.ldmrefresher_export_csv,
+.ldmrefresher_export_all_csv,
+.formImportUsers button,
+#save_template,
+#load_template,
+#ldmrefresher_refresher_submit,
+#ldmrefresher_sync_submit,
+#ldmrefresher_export_all_bck_btn,
+.ldr_email_btn {
+    height: 28px;
+    line-height: 26px;
+    padding: 0 20px 2px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.ldmrefresher_export_csv, .ldr_email_btn, .ldmrefresher_export_all_csv {
+    margin: 10px 0;
+}
+
+#matrix_parent {
+    height: 500px;
+}
+
+#group_matrix_report th,#refresher_history_report th {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #0073aa;
+}
+
+#group_matrix_report th[colspan="2"],#refresher_history_report th[colspan="2"] {
+    text-align: center;
+}
+
+#group_matrix_report th, #refresher_history_report th,
+#group_matrix_report td, #refresher_history_report td,
+#user_matrix_report td {
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#group_matrix_report th:last-child, #refresher_history_report th:last-child, 
+#group_matrix_report td:last-child,#refresher_history_report td:last-child,
+#user_matrix_report td:last-child {
+    border-right: 0;
+}
+
+#user_matrix_report td {
+    vertical-align: middle;
+}
+
+.user_info {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.user_info span, .user_info ul {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+.user_info div span:first-child {
+    font-weight: bold;
+    color: #0085ba;
+}
+
+.user_info div span:first-child::after {
+    content: ':';
+}
+
+#courses-lists:after,
+#courses-lists:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.ldmrefresher_group_job {
+    float: left;
+    padding-right: 15px;
+}
+
+.formImportUsers,
+#createCompanyUserForm {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#createCompanyUserForm {
+    margin: 10px 0;
+}
+
+.formImportUsers button {
+    float: right;
+}
+
+.formImportUsers a {
+    display: block;
+    margin: 10px 0;
+}
+
+#save_template_error p {
+    color: #ff0000;
+}
+#save_template_success p {
+    color: #00ad0d;
+}
+
+#save-template, #load-template {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#ldmrefresher_cron, #ldmrefresher_sync_data {
+    display: inline-block;
+}
+
+
+.actived_class{
+    color:red;
+}
+
+#ldmv2refresher_sites_container::after, #ldmv2refresher_sites_container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#ldmv2refresher_sites_container li {
+    display: block;
+    width: 31.3%;
+    float: left;
+    margin: 0 1% 20px;
+    background-color: #23282d;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#ldmv2refresher_sites_container li .delete_site {
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.matrix-pagination-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.matrix-pagination-container a {
+    height: 28px;
+    line-height: 26px;
+    padding: 0 20px 2px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.matrix-pagination-container:after {
+    clear: right;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+/*    background-color: #fefefe;*/
+    margin: 15% auto; /* 15% from the top and centered */
+/*    padding: 20px;*/
+/*    border: 1px solid #888;*/
+    width: 228px; /* Could be more or less, depending on screen size */
+}
+
+a#upload_pop_confirm,
+a#upload_pop_cancel,
+a#pop_confirm,
+a#pop_cancel,
+a#edit_pop_confirm,
+a.history_pop_confirm,
+a#history_pop_cancel,
+a#edit_pop_cancel{
+    background: #0285ba;
+    display: block;
+    color: #fff;
+    margin-top: 5px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #036f9a;
+}
+
+.filter_first_name_history.selected,
+.filter_last_name_history.selected{
+    color: red;
+}
+
+span.filter_first_name,
+span.filter_last_name {
+    cursor: pointer;
+    font-size:larger;
+    font-weight: 700;
+    display: inline-block;
+    min-width:14px;
+    text-align: center;
+}
+
+span.filter_first_name:hover,
+span.filter_last_name:hover {
+    background-color: #EDEDF0;
+}
+
+.int_names {
+    font-weight: 600;
+    font-size: medium;
+    line-height: 30px;
+}
+
+#ldmrefresher_matrix_filter #ldmrefresher_submit {
+    position: relative;
+    left: 10px;
+}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 button#show-settings-link,
+.learndash-lms_page_refresher_report_ldmv2 button#show-settings-link,
+.learndash-lms_page_enrol_new_users_ldmv2 button#show-settings-link,
+.learndash-lms_page_refresher_history_ldmv2 button#show-settings-link{
+    display:none;
+}
+
+.user_course_status_dropdown {
+    max-width :125px;
+}
+
+#group_matrix_report th{text-align:center;}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 #group_matrix_report th{
+    background-color: #E5E5DB;
+    border-color: #000;
+}
+
+.learndash-lms_page_refresher_history_ldmv2 th{
+    background-color: #E5E5DB;
+}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 table
+{
+    border: 1px solid #000;
+    border-bottom: 0px;
+}
+
+.learndash-lms_page_refresher_report_ldmv2 #group_matrix_report tr{
+    border: 1px solid #000;
+}
+
+
+.learndash-lms_page_groups_matrix_report_ldmv2 #group_matrix_report tr > td:first-child {
+    background-color: #f5f5f1;
+    border-color: #000;
+    min-width: 110px;
+}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 #group_matrix_report td
+{
+    border-color: #000;
+}
+
+.first-name-filter {
+    margin-top: 5px;
+}
+
+#ldmrefresher_submit {
+    margin-bottom: 20px;
+}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 #wpbody .wrap h2{
+    text-transform: uppercase;
+}
+
+.learndash-lms_page_groups_matrix_report_ldmv2 #wpbody .wrap select,
+.learndash-lms_page_refresher_report_ldmv2 #wpbody .wrap select{
+    border: 1px solid #000;
+}
+
+#up_mod{
+    background-color: #E9E9E9;
+    width:fit-content;
+    padding: 20px 5px;
+    border-radius: 3px;
+}
+
+.modal-content-upload{
+    width:270px;
+}
+
+#ldr_remove_grp_lnk{
+    cursor: pointer;
+}

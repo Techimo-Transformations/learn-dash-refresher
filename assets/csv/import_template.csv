@@ -1,0 +1,4 @@
+username,email,first_name,last_name,password,sites,group
+sample1,sample1@example.com,Sample,One,123456,Site 1|Site 2|Site 3,Packing
+sample2,sample2@example.com,Sample,Two,123456,Site 1|Site 2,Flow
+sample3,sample3@example.com,Sample,Three,123456,,Cooking
